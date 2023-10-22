@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalTransmit.HelloPage"
+             Title="Local Transmit">
+    
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="30, 10"
+        VerticalOptions="Center">
+
+        <Label
+            Text="What will you trying to do..."
+            HorizontalTextAlignment="Center"
+            FontSize="Medium"/>
+
+        <HorizontalStackLayout
+            Spacing="10"
+            HorizontalOptions="Center">
+
+            <Button
+            Text="Send"
+            Clicked="Send_Clicked"/>
+
+            <Button
+            Text="Receive"
+            Clicked="Receive_Clicked"/>
+
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>xyz.cardidi.LanTransmit</RootNamespace>
+        <LangVersion>10</LangVersion>
+        <IsPackable>false</IsPackable>
+        <Company />
+        <Product>LanTransmitCS</Product>
+        <AssemblyName>lanttcs</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="lan_transmit.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>

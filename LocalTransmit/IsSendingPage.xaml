@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalTransmit.IsSendingPage"
+             Title="Sending...">
+
+    <NavigationPage.HasBackButton>false</NavigationPage.HasBackButton>
+
+    <StackLayout
+        Spacing="20"
+        Padding="30, 20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+
+        <Editor
+            x:Name="console"
+            IsReadOnly="True"
+            AutoSize="TextChanges"
+            VerticalOptions="Fill"/>
+
+        <StackLayout
+            Spacing="5"
+            HorizontalOptions="Start">
+            
+            <Button
+            x:Name="cancel"
+            Text="Cancel"
+            Clicked="cancel_Clicked"/>
+        
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

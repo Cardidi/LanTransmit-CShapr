@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalTransmit.IsReceivingPage"
+             Title="Receiving...">
+
+    <StackLayout
+        Spacing="20"
+        Padding="30, 20"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+
+        <StackLayout
+            Spacing="5"
+            HorizontalOptions="Start">
+
+            <Label
+                Text="Receive Path"/>
+
+            <Entry
+                x:Name="ip_setting"
+                Text="0:0"
+                IsReadOnly="True"/>
+
+        </StackLayout>
+
+        <Editor
+            x:Name="console"
+            IsReadOnly="True"
+            AutoSize="TextChanges"
+            VerticalOptions="Fill"/>
+
+        <StackLayout
+            Spacing="5"
+            HorizontalOptions="Start">
+
+            <Button
+            x:Name="Save"
+            Text="Save As"
+            Clicked="Save_Clicked"/>
+
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

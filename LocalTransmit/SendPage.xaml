@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocalTransmit.SendPage"
+             Title="Send File">
+
+    <StackLayout
+        VerticalOptions="Start">
+
+
+        <Image
+            Source="dotnet_bot.png"
+            MinimumHeightRequest="100"
+            MaximumWidthRequest="300"
+            VerticalOptions="Start"/>
+
+        <VerticalStackLayout
+        Spacing="20"
+        Padding="30, 20"
+        VerticalOptions="CenterAndExpand">
+
+            <VerticalStackLayout
+            Spacing="5">
+
+                <Label Text="File"/>
+
+                <StackLayout
+                Spacing="5"
+                VerticalOptions="Center"
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand">
+
+                    <Entry
+                        x:Name="filepath"
+                        HorizontalOptions="FillAndExpand"
+                        Placeholder="Send File Path..."
+                        ClearButtonVisibility="WhileEditing"
+                        IsSpellCheckEnabled="False"/>
+
+                    <Button
+                        x:Name="FileSelector"
+                        Text="Select"
+                        Clicked="FileSelector_Clicked"/>
+                </StackLayout>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout
+            Spacing="5">
+
+                <Label Text="Recevier Info"/>
+
+                <StackLayout
+                Spacing="5"
+                VerticalOptions="Center"
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand">
+
+                    <Entry
+                    x:Name="rev_ip"
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="IP"
+                    IsSpellCheckEnabled="False"/>
+
+                    <Label Text=":" VerticalTextAlignment="Center"/>
+
+                    <Entry
+                        x:Name="rev_port"
+                        HorizontalOptions="End"
+                            Text="8090"
+                        MaxLength="6"
+                        Placeholder="Port"
+                        IsSpellCheckEnabled="False"/>
+
+                </StackLayout>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout
+            HorizontalOptions="Start"
+            Spacing="5">
+
+                <Button 
+                    x:Name="Start"
+                    Text="Start"
+                    Clicked="Start_Clicked"/>
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </StackLayout>
+</ContentPage>
